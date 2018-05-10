@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台模板</title>
+<link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" title="" rel="stylesheet" />
+<link title="" href="css/style.css" rel="stylesheet" type="text/css"  />
+<link title="blue" href="css/dermadefault.css" rel="stylesheet" type="text/css"/>
+<link title="green" href="css/dermagreen.css" rel="stylesheet" type="text/css" disabled="disabled"/>
+<link title="orange" href="css/dermaorange.css" rel="stylesheet" type="text/css" disabled="disabled"/>
+<script src="script/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="script/jquery.cookie.js" type="text/javascript"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<nav class="nav navbar-default navbar-mystyle navbar-fixed-top">
+  <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+     <span class="icon-bar"></span> 
+     <span class="icon-bar"></span> 
+     <span class="icon-bar"></span> 
+    </button>
+    <a class="navbar-brand mystyle-brand"><span class="glyphicon glyphicon-home"></span></a> </div>
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="li-border"><a class="mystyle-color" href="#">管理控制台</a></li>
+      <li class="dropdown li-border"><a href="#" class="dropdown-toggle mystyle-color" data-toggle="dropdown">产品与服务<span class="caret"></span></a>
+        <!----下拉框选项---->
+          <div class="dropdown-menu topbar-nav-list">
+              <div class="topbar-nav-col">
+                  <div class="topbar-nav-item">
+                      <p class="topbar-nav-item-title">云存储</p>
+                      <ul>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-road"></span>
+                              <span class="">录音存储</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">IVR文件</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="">
+                      <p class="topbar-nav-item-title">统计分析</p>
+                      <ul>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-road"></span>
+                              <span class="">简单极致报表多维分析</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">智能报表</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="">
+                      <p class="topbar-nav-item-title">监控与管理</p>
+                      <ul>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-road"></span>
+                              <span class="">云监控</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">访问控制</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">操作审计</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+
+              <div class="topbar-nav-col">
+                  <div class="topbar-nav-item">
+                      <p class="topbar-nav-item-title">云通信</p>
+                      <ul>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-road"></span>
+                              <span class="">智能云通讯服务</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">数据流量服务</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">物联网卡服务</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">中间号服务</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">语音验证码服务</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">语音通知服务</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="">
+                      <p class="topbar-nav-item-title">监控与管理</p>
+                      <ul>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-road"></span>
+                              <span class="">云监控</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">访问控制</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">操作审计</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+
+
+              </div>
+              <div class="topbar-nav-col">
+
+                  <div class="">
+                      <p class="topbar-nav-item-title">应用服务</p>
+                      <ul>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-road"></span>
+                              <span class="">云客服</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <span class="">云呼叫中心</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">微信挪车码</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">网页回呼</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">点击通话</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">API控制台</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">资源管理（ERP）</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">办公自动化（OA）</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">客户管理（CRM）</span>
+                          </a>
+                          </li>
+                          <li><a href="#">
+                              <span class="glyphicon glyphicon-gift"></span>
+                              <span class="">人事管理（HRM）</span>
+                          </a>
+                          </li>
+                      </ul>
+                  </div>
+
+
+
+              </div>
+
+          </div>
+      </li>
+    </ul>
+    
+    <ul class="nav navbar-nav pull-right">
+       <li class="li-border">
+          <a href="#" class="mystyle-color">
+            <span class="glyphicon glyphicon-bell"></span>
+            <span class="topbar-num">0</span>
+          </a>
+      </li>
+      <li class="li-border dropdown"><a href="#" class="mystyle-color" data-toggle="dropdown">
+      <span class="glyphicon glyphicon-search"></span> 搜索</a>
+         <div class="dropdown-menu search-dropdown">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                 <span class="input-group-btn">
+                   <button type="button" class="btn btn-default">搜索</button>
+                </span>
+            </div>
+         </div>
+      </li>
+      <li class="dropdown li-border"><a href="#" class="dropdown-toggle mystyle-color" data-toggle="dropdown">帮助与文档<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">帮助与文档</a></li>
+          <li class="divider"></li>
+          <li><a href="#">论坛</a></li>
+          <li class="divider"></li>
+          <li><a href="#">博客</a></li>
+        </ul>
+      </li>
+      <li class="dropdown li-border">
+         <a href="#" class="dropdown-toggle mystyle-color" data-toggle="dropdown">605875855@qq.com
+         <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">退出</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle mystyle-color" data-toggle="dropdown">换肤<span class="caret"></span></a>
+        <ul class="dropdown-menu changecolor">
+          <li id="blue"><a href="#">蓝色</a></li>
+          <li class="divider"></li>
+          <li id="green"><a href="#">绿色</a></li>
+          <li class="divider"></li>
+          <li id="orange"><a href="#">橙色</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="down-main">
+  <div class="left-main left-off">
+    <div class="sidebar-fold"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+      <div class="subNavBox">
+          <div class="sBox">
+              <div class="subNav sublist-down"><span class="title-icon glyphicon glyphicon-chevron-down"></span><span
+                      class="sublist-title">应用服务</span></div>
+              <ul class="navContent" style="display:block">
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>云在线客服</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-headphones"></span><span class="sub-title">云在线客服</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>云呼叫中心</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-phone-alt"></span><span class="sub-title">云呼叫中心</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>云电销</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">云电销</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>媒体号呼入</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">媒体号呼入</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>电话客服</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-comment"></span><span class="sub-title">电话客服</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>微信挪车码</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-qrcode"></span><span class="sub-title">微信挪车码</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>网页回呼</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-earphone"></span><span class="sub-title">网页回呼</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>点击通话</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-gift"></span><span class="sub-title">点击通话</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>API控制台</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-wrench"></span><span class="sub-title">API控制台</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>资源管理（ERP）</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-briefcase"></span><span class="sub-title">资源管理（ERP）</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>办公自动化（OA）</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-cog"></span><span class="sub-title">办公自动化（OA）</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>客户管理（CRM）</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-calendar"></span><span class="sub-title">客户管理（CRM）</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>人事管理（HRM）</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">人事管理（HRM）</span></a>
+                  </li>
+              </ul>
+          </div>
+          <div class="sBox">
+              <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span
+                      class="sublist-title">云通信</span></div>
+              <ul class="navContent" style="display:none">
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>智能云通信服务</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-bell"></span><span class="sub-title">智能云通信服务</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>数据流量服务</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-picture"></span><span class="sub-title">数据流量服务</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>物联网卡服务</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-erase"></span><span class="sub-title">物联网卡服务</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>中间号服务</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-object-align-vertical"></span><span class="sub-title">中间号服务</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>语音验证码服务</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-volume-down"></span><span class="sub-title">语音验证码服务</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>语音通知服务</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-phone"></span><span class="sub-title">语音通知服务</span></a>
+                  </li>
+              </ul>
+          </div>
+          <div class="sBox">
+              <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span
+                      class="sublist-title">云存储</span>
+              </div>
+              <ul class="navContent" style="display:none">
+                  <li class="active">
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>lvr文件</div>
+                      <a href="userInfo.html"><span class="sublist-icon glyphicon glyphicon-folder-open"></span><span
+                              class="sub-title">lvr文件</span></a></li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>录音存储</div>
+                      <a href="message.html"><span class="sublist-icon  glyphicon glyphicon-copy"></span><span
+                              class="sub-title">录音存储</span></a></li>
+                  <!--<li>-->
+                  <!--<div class="showtitle" style="width:100px;"><img src="img/leftimg.png" />短信</div>-->
+                  <!--<a href="smsInfo.html"><span class="sublist-icon glyphicon glyphicon-bullhorn"></span><span class="sub-title">短信</span></a></li>-->
+                  <!--<li>-->
+                  <!--<div class="showtitle" style="width:100px;"><img src="img/leftimg.png" />实名认证</div>-->
+                  <!--<a href="identify.html"><span class="sublist-icon glyphicon glyphicon-credit-card"></span><span class="sub-title">实名认证</span></a></li>-->
+                  <!--<li>-->
+                  <!--<div class="showtitle" style="width:100px;"><img src="img/leftimg.png" />实名认证1111</div>-->
+                  <!--<a href=""><span class="sublist-icon glyphicon glyphicon-credit-card"></span><span class="sub-title">实名认证</span></a></li>-->
+              </ul>
+          </div>
+          <div class="sBox">
+              <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span
+                      class="sublist-title">统计分析</span></div>
+              <ul class="navContent" style="display:none">
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>报表多维分析</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-stats"></span><span class="sub-title">报表多维分析</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>智能报表</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-list-alt"></span><span class="sub-title">智能报表</span></a>
+                  </li>
+                  <!--<li>-->
+                  <!--<div class="showtitle" style="width:100px;"><img src="img/leftimg.png" />添加新闻</div>-->
+                  <!--<a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">添加新闻</span></a></li>-->
+                  <!--<li>-->
+                  <!--<div class="showtitle" style="width:100px;"><img src="img/leftimg.png" />新闻管理</div>-->
+                  <!--<a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">新闻管理</span></a></li>-->
+              </ul>
+          </div>
+          <div class="sBox">
+              <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span
+                      class="sublist-title">监控与管理</span></div>
+              <ul class="navContent" style="display:none">
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>云监控</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-bullhorn"></span><span class="sub-title">云监控</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>访问控制</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-picture"></span><span class="sub-title">访问控制</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>操作审计</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-gift"></span><span class="sub-title">操作审计</span></a>
+                  </li>
+                  <li>
+                      <!--<div class="showtitle" style="width:100px;"><img src="img/leftimg.png" />新闻管理</div>-->
+                      <!--<a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">新闻管理</span></a></li>-->
+              </ul>
+          </div>
+          <div class="sBox">
+              <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span
+                      class="sublist-title">AI大数据</span></div>
+              <ul class="navContent" style="display:none">
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>在线客服机器人</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-off"></span><span class="sub-title">在线客服机器人</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>座席智能助手</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-sound-stereo"></span><span class="sub-title">座席智能助手</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>智能培训机器人</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-sound-dolby"></span><span class="sub-title">智能培训机器人</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>自动外呼机器人
+                      </div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-subtitles"></span><span class="sub-title">自动外呼机器人</span></a></li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>多类型智能知识库（行业宝典）</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-education"></span><span class="sub-title">多类型智能知识库（行业宝典）</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>企业输入法
+                      </div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">企业输入法</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>智能质检</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">智能质检</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>画像分析</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-picture"></span><span class="sub-title">画像分析</span></a>
+                  </li>
+                  <li>
+                      <div class="showtitle" style="width:100px;"><img src="img/leftimg.png"/>营销引擎</div>
+                      <a href="#"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">营销引擎</span></a>
+                  </li>
+              </ul>
+          </div>
+
+
+      </div>
+  </div>
+  <div class="right-product right-off">
+  
+     右侧测试内容
+  
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+/*换肤*/
+$(".dropdown .changecolor li").click(function(){
+	var style = $(this).attr("id");
+    $("link[title!='']").attr("disabled","disabled"); 
+	$("link[title='"+style+"']").removeAttr("disabled"); 
+
+	$.cookie('mystyle', style, { expires: 7 }); // 存储一个带7天期限的 cookie 
+})
+var cookie_style = $.cookie("mystyle"); 
+if(cookie_style!=null){ 
+    $("link[title!='']").attr("disabled","disabled"); 
+	$("link[title='"+cookie_style+"']").removeAttr("disabled"); 
+} 
+
+/*左侧导航栏显示隐藏功能*/
+$(".subNav").click(function(){				
+			/*显示*/
+			if($(this).find("span:first-child").attr('class')=="title-icon glyphicon glyphicon-chevron-down")
+			{
+				$(this).find("span:first-child").removeClass("glyphicon-chevron-down");
+			    $(this).find("span:first-child").addClass("glyphicon-chevron-up");
+			    $(this).removeClass("sublist-down");
+				$(this).addClass("sublist-up");
+			}
+			/*隐藏*/
+			else
+			{
+				$(this).find("span:first-child").removeClass("glyphicon-chevron-up");
+				$(this).find("span:first-child").addClass("glyphicon-chevron-down");
+				$(this).removeClass("sublist-up");
+				$(this).addClass("sublist-down");
+			}	
+		// 修改数字控制速度， slideUp(500)控制卷起速度
+	    $(this).next(".navContent").slideToggle(300).siblings(".navContent").slideUp(300);
+	})
+/*左侧导航栏缩进功能*/
+$(".left-main .sidebar-fold").click(function(){
+
+	if($(this).parent().attr('class')=="left-main left-full")
+	{
+		$(this).parent().removeClass("left-full");
+		$(this).parent().addClass("left-off");
+		
+		$(this).parent().parent().find(".right-product").removeClass("right-full");
+		$(this).parent().parent().find(".right-product").addClass("right-off");
+		
+		}
+	else
+	{
+		$(this).parent().removeClass("left-off");
+		$(this).parent().addClass("left-full");
+		
+		$(this).parent().parent().find(".right-product").removeClass("right-off");
+		$(this).parent().parent().find(".right-product").addClass("right-full");
+		
+		}
+	})	
+ 
+  /*左侧鼠标移入提示功能*/
+		$(".sBox ul li").mouseenter(function(){
+			if($(this).find("span:last-child").css("display")=="none")
+			{$(this).find("div").show();}
+			}).mouseleave(function(){$(this).find("div").hide();})	
+})
+</script>
+</body>
+</html>
